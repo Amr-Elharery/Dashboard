@@ -161,6 +161,40 @@ a{
     margin-left: 20px;
     margin-right: 20px;
 }
+/* End Wrapper */
+/* Start Welcome */
+.welcome{
+    overflow: hidden;
+}
+.intro img{
+    width: 150px;
+    margin-bottom: -10px;
+}
+.welcome .avatar{
+    width: 64px;
+    height: 64px;
+    border: 2px solid #fff;
+    margin-top: -32px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0 0 5px #ddd;
+    padding: 2px;
+}
+.welcome .body{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.welcome .body > div{
+    flex: 1;
+}
+.welcome .visit{
+    margin: 15px 15px 15px auto;
+    transition: 0.3s;
+    padding: 3px;
+}
+.welcome .visit:hover{
+    background-color: var(--blue-alt-color);
+}
 @media (max-width: 767px){
     .wrapper{
         grid-template-columns: minmax(200px, 1fr);
@@ -168,5 +202,14 @@ a{
         margin-right: 10px;
         gap:10px;
     }
+    .welcome .intro{
+        padding-bottom: 30px;
+    }
+    .welcome .avatar{
+        margin-left: 0;
+    }
+    .welcome .body > div:not(:last-child){
+        margin-bottom: 20px;
+    }
 }
-/* End Wrapper */
+/* End Welcome */
