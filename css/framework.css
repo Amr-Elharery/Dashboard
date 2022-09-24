@@ -58,11 +58,20 @@
 .mt-10{
     margin-top: 10px;
 }
+.mt-20{
+    margin-top:20px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
 .mb-5{
     margin-bottom: 5px;
 }
 .mb-10{
     margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
 }
 
 /* End padding and margin */
@@ -102,6 +111,9 @@ a{
 .fs-14{
     font-size: 14px;
 }
+.fs-15{
+    font-size: 15px;
+}
 /* End Font Size */
 /* Start color */
 .c-black{
@@ -127,6 +139,9 @@ a{
 .rad-10{
     border-radius:10px;
 }
+.b-none{
+    border:none;
+}
 /* End border */
 
 /* Start width */
@@ -143,6 +158,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.btn-shape{
+    padding: 4px 10px;
+    border-radius: 6px;
 }
 /* End Components */
 

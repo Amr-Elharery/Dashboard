@@ -190,7 +190,6 @@ a{
 .welcome .visit{
     margin: 15px 15px 15px auto;
     transition: 0.3s;
-    padding: 3px;
 }
 .welcome .visit:hover{
     background-color: var(--blue-alt-color);
@@ -213,3 +212,18 @@ a{
     }
 }
 /* End Welcome */
+/* Start Quick Draft Widget */
+.quick-draft textarea{
+    min-height: 180px;
+    resize: none;
+}
+.quick-draft .save{
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: auto;
+}
+.quick-draft .save:hover{
+    background-color: var(--blue-alt-color);
+}
+
+/* End Quick Draft Widget */
