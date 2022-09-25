@@ -159,9 +159,26 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+.center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btn-shape{
     padding: 4px 10px;
     border-radius: 6px;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 /* End Components */
 
