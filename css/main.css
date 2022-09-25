@@ -239,70 +239,79 @@ a{
     margin-bottom: 10px;
 }
 .yearly-target .row .icon{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 .yearly-target .row:nth-of-type(1) .icon{
-    background-color: #0075ff70;
-    color: var(--blue-color);
+    background-color: rgb(0 117 255 / 20%);
 }
 .yearly-target .row:nth-of-type(2) .icon{
     background-color: #f59e0b57;
-    color: var(--orange-color);
+    
 }
 .yearly-target .row:nth-of-type(3) .icon{
     background-color: #22c55e4a;
-    color: var(--green-color);
+
 }
 .yearly-target .progress{
-    margin-left: 5px;
+    margin-left: 15px;
     flex: 1;
 }
-.yearly-target .progress p:nth-child(2){
-    font-weight: bold;
-}
 .yearly-target .progress .prog{
-    position: relative;
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 3px;
+    height: 4px;
 }
 .yearly-target .row:nth-of-type(1) .prog{
-    background-color: #0075ff70;
+    background-color: rgb(0 117 255 / 20%);
 }
 .yearly-target .row:nth-of-type(2) .prog{
-    background-color: #f59e0b57;
+    background-color: rgb(245 158 11 / 20%);
 }
 .yearly-target .row:nth-of-type(3) .prog{
-    background-color: #22c55e4a;
+    background-color: rgb(34 197 94 / 20%);
 }
-.yearly-target .progress .prog::before{
-    /* content: attr(data-progress); */
+.yearly-target .progress .prog > span{
     position: absolute;
-    background-color: var(--blue-color);
-    color: #fff;
-    padding: 2px 3px;
-    border-radius: 6px;
-}
-.yearly-target .progress .prog::after{
-    /* content: ''; */
-    position: absolute;
-    border: 8px solid transparent;
-    border-top-color: var(--blue-color);
+    left: 0;
     top: 0;
-    left: 30%;
-}
-.yearly-target .progress .prog span{
-    position: absolute;
     height: 100%;
 }
-.yearly-target .row:nth-of-type(1) .prog span{
+.yearly-target .row:nth-of-type(1) .prog > span{
     background-color: var(--blue-color);
 }
-.yearly-target .row:nth-of-type(2) .prog span{
+.yearly-target .row:nth-of-type(2) .prog > span{
     background-color: var(--orange-color);
 }
-.yearly-target .row:nth-of-type(3) .prog span{
+.yearly-target .row:nth-of-type(3) .prog > span{
     background-color: var(--green-color);
+}
+.yearly-target .progress .prog > span span{
+    position: absolute;
+    right: -16px;
+    bottom: 16px;
+    color:white;
+    padding:2px 5px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+.yearly-target .progress .prog > span span::after{
+    content: '';
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.yearly-target .row:nth-of-type(1) .prog > span span::after{
+border-top-color: var(--blue-color);
+}
+.yearly-target .row:nth-of-type(2) .prog > span span::after{
+border-top-color: var(--orange-color);
+}
+.yearly-target .row:nth-of-type(3) .prog > span span::after{
+border-top-color: var(--green-color);
 }
 /* End Yearly Target Widget */

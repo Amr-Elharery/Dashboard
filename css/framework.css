@@ -82,6 +82,15 @@
 .bg-eee{
     background-color: #eee;
 }
+.bg-blue{
+    background-color: var(--blue-color);
+}
+.bg-green{
+    background-color: var(--green-color);
+}
+.bg-orange{
+    background-color: var(--orange-color);
+}
 /* End color */
 /* Start position */
 .p-relative{
@@ -115,6 +124,10 @@ a{
     font-size: 15px;
 }
 /* End Font Size */
+/* Start Font Weight */
+.fw-bold{
+    font-weight: bold;
+}
 /* Start color */
 .c-black{
     color: black;
@@ -128,8 +141,11 @@ a{
 .c-blue{
     color: var(--blue-color);
 }
-.bg-blue{
-    background-color: var(--blue-color);
+.c-green{
+    color: var(--green-color);
+}
+.c-orange{
+    color: var(--orange-color);
 }
 /* End color */
 /* Start border */
