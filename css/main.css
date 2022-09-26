@@ -38,7 +38,7 @@ a{
 /* Start Sidebar */
 .sidebar{
     width: 250px;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #ccc;
 
 }
 .sidebar > h3{
@@ -120,6 +120,9 @@ a{
 .head .search input:focus::placeholder{
     opacity: 0;
 }
+.head .icons .notify{
+    animation: bouncing .8s 3;
+}
 .head .icons .notify::before{
     content: '';
     position: absolute;
@@ -129,7 +132,6 @@ a{
     top:-5px;
     border-radius: 50%;
     background-color: var(--red-color);
-
 }
 .head .icons img{
     width: 32px;
@@ -315,3 +317,25 @@ border-top-color: var(--orange-color);
 border-top-color: var(--green-color);
 }
 /* End Yearly Target Widget */
+/* Start Tickets Widget */
+.tickets .box{
+    border: 1px solid #ccc;
+    width: calc(50% - 10px); /* Gap = 20px */
+}
+@media (max-width: 767px){
+.tickets .box{
+        width: 100%;
+    }
+}
+/* End Tickets Widget */
+
+/* -------------------------------------------------------- */
+/* Key Frames */
+@keyframes bouncing {
+    0%, 10%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%, 60%{
+        transform: translateX(-5px);
+    }
+}

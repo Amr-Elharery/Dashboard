@@ -16,6 +16,9 @@
 .space-between{
     justify-content: space-between;
 }
+.f-wrap{
+    flex-wrap: wrap;
+}
 .d-grid{
     display: grid;
 }
@@ -117,11 +120,17 @@ a{
 }
 /* End list style */
 /* Start Font Size */
+.fs-13{
+    font-size: 13px;
+}
 .fs-14{
     font-size: 14px;
 }
 .fs-15{
     font-size: 15px;
+}
+.fs-25{
+    font-size: 25px;
 }
 /* End Font Size */
 /* Start Font Weight */
@@ -146,6 +155,9 @@ a{
 }
 .c-orange{
     color: var(--orange-color);
+}
+.c-red{
+    color: var(--red-color);
 }
 /* End color */
 /* Start border */
