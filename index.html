@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
         <!-- Our frame work -->
         <link rel="stylesheet" href="css/framework.css">
         <!-- Our style file -->
@@ -13,8 +15,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&
         family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="css/all.min.css">
         <title>Dashboard</title>
     </head>
     <body>
@@ -295,6 +295,7 @@
                     <!-- End Top Search Word Widget -->
                     <!-- Start Latest Uploads -->
                     <div class="latest-uploads p-20 bg-white rad-10">
+                        <h2 class="mt-0 mb-20">Latest Uploads</h2>
                         <ul class="m-0">
                             <li class="between-flex pb-10 mb-10">
                                 <div class="d-flex align-center">
@@ -371,6 +372,105 @@
                         </ul>
                     </div>
                     <!-- End Latest Uploads -->
+                    <!-- Start Last Project -->
+                    <div class="last-project  p-20 bg-white rad-10 p-relative">
+                        <h2 class="m-0 mb-20">Last Project Progress</h2>
+                        <ul class="m-0 p-relative">
+                            <li class="d-flex align-center done mt-25">Got The Project</li>
+                            <li class="d-flex align-center done mt-25">Started The Project</li>
+                            <li class="d-flex align-center done mt-25">The Project About To Finish</li>
+                            <li class="d-flex align-center current mt-25">Test The Project</li>
+                            <li class="d-flex align-center mt-25">Finish The Project & Get Money</li>
+                        </ul>
+                        <img class="lunch-icon hide-mobile" src="imgs/project.png" alt="Project">
+                    </div>
+                    <!-- End Last Project -->
+                    <!-- Start Reminder -->
+                    <div class="reminders  p-20 bg-white rad-10 p-relative">
+                        <h2 class="mt-0 mb-25">Reminders</h2>
+                        <ul class="m-0">
+                            <li class="d-flex align-center mt-15">
+                                <span class="key bg-blue mr-15 d-block rad-half"></span>
+                                <div class="blue pl-15">
+                                    <p class="fs-14 fw-bold mt-0 mb-5">Check My Task List</p>
+                                    <span class="fs-13 c-grey">28/12/2022 - 12:00am</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-center mt-15">
+                                <span class="key bg-green mr-15 d-block rad-half"></span>
+                                <div class="green pl-15">
+                                    <p class="fs-14 fw-bold mt-0 mb-5">Check My Projects</p>
+                                    <span class="fs-13 c-grey">29/12/2022 - 12:00am</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-center mt-15">
+                                <span class="key bg-orange mr-15 d-block rad-half"></span>
+                                <div class="orange pl-15">
+                                    <p class="fs-14 fw-bold mt-0 mb-5">Call All Clients</p>
+                                    <span class="fs-13 c-grey">1/1/2023 - 12:00am</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-center mt-15">
+                                <span class="key bg-red mr-15 d-block rad-half"></span>
+                                <div class="red pl-15">
+                                    <p class="fs-14 fw-bold mt-0 mb-5">Final Exam</p>
+                                    <span class="fs-13 c-grey">8/1/2023 - 8:00am</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Reminder -->
+                    <!-- Start Last Post -->
+                    <div class="last-post p-20 bg-white rad-10 p-relative">
+                        <h2 class="mt-0 mb-25">Latest Post</h2>
+                        <div class="top d-flex align-center">
+                            <img class="avatar mr-15" src="imgs/avatar.png" alt="Pic">
+                            <div class="info">
+                                <span class="d-block mb-5 fw-bold">Amr El-Harery</span>
+                                <span class="c-grey">About 3 Hours Ago</span>
+                            </div>
+                        </div>
+                        <div class="post-content txt-c-mobile pt-20 pb-20 mt-20 mb-20">
+                            look Any fool can write code that a computer can understand.
+                            Good programmers write code that humans can understand.
+                        </div>
+                        <div class="post-stats between-flex c-grey">
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                                <span>1.8k</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-comments"></i>
+                                <span>555</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Last Post -->
+                    <!-- Start Socila Media -->
+                    <div class="social-media p-20 bg-white rad-10 p-relative">
+                        <h2 class="mt-0 mb-25">Social Media Stats</h2>
+                        <div class="box twitter p-15 p-relative mb-10 between-flex">
+                            <i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
+                            <span>90K Followers</span>
+                            <a class="fs-13 c-white btn-shape" href="#">Follow</a>
+                        </div>
+                        <div class="box facebook p-15 p-relative mb-10 between-flex">
+                            <i class="fa-brands fa-facebook fa-2x c-white h-full center-flex"></i>
+                            <span>150K Followers</span>
+                            <a class="fs-13 c-white btn-shape" href="#">Like</a>
+                        </div>
+                        <div class="box youtube p-15 p-relative mb-10 between-flex">
+                            <i class="fa-brands fa-youtube fa-2x c-white h-full center-flex"></i>
+                            <span>500K Subscriber</span>
+                            <a class="fs-13 c-white btn-shape" href="#">Subscribe</a>
+                        </div>
+                        <div class="box linkedin p-15 p-relative mb-10 between-flex">
+                            <i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i>
+                            <span>5K Followers</span>
+                            <a class="fs-13 c-white btn-shape" href="#">Follow</a>
+                        </div>
+                    </div>
+                    <!-- End Socila Media -->
                 </div>
             </div>
         </div>

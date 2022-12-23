@@ -397,6 +397,127 @@ border-top-color: var(--green-color);
     height: 40px;
 }
 /* End Latest Uploads */
+/* Start Last Project */
+.last-project ul::before{
+    content: '';
+    position: absolute;
+    left: 11px;
+    height: 100%;
+    width: 2px;
+    background-color: var(--blue-color);
+}
+.last-project ul li::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+.last-project ul li.done::before{
+    background-color: var(--blue-color);
+
+}
+.last-project ul li.current::before{
+    animation: change-color 0.8s infinite alternate;
+}
+.last-project .lunch-icon{
+    position: absolute;
+    width: 180PX;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+}
+
+/* End Last Project */
+/* Start Reminder */
+.reminders ul .key{
+    width: 15px;
+    height: 15px;
+}
+.reminders ul li > .blue{
+    border-left: 2px solid var(--blue-color);
+}
+.reminders ul li > .green{
+    border-left: 2px solid var(--green-color);
+}
+.reminders ul li > .orange{
+    border-left: 2px solid var(--orange-color);
+}
+.reminders ul li > .red{
+    border-left: 2px solid var(--red-color);
+}
+/* End Reminder */
+/* Start Last Post */
+.last-post .avatar{
+    width: 48px;
+    height: 48px;
+}
+.last-post .post-content{
+    text-transform: capitalize;
+    line-height: 1.8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    min-height: 140px;
+}
+/* End Last Post */
+/* Start Social */
+.social-media .box{
+    padding-left: 70px;
+    border-radius: 3px;
+}
+.social-media .box i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+.social-media .box i:hover{
+    transform: rotate(5deg);
+}
+.social-media .twitter{
+    background-color: rgb(29 161 242 / 20%);
+    color: #1da1f2;
+}
+.social-media .twitter a,
+.social-media .twitter i{
+    background-color: #1da1f2;
+}
+.social-media .facebook{
+    background-color: rgb(29 119 242 / 20%);
+    color: #1da1f2;
+}
+.social-media .facebook a,
+.social-media .facebook i{
+    background-color: #1877f2;
+}
+.social-media .youtube{
+    background-color: rgb(255 0 0 / 20%);
+    color: #f00;
+}
+.social-media .youtube a,
+.social-media .youtube i{
+    background-color: #f00;
+}
+.social-media .linkedin{
+    background-color: rgb(0 119 181 / 20%);
+    color: #0077b5;
+}
+.social-media .linkedin a,
+.social-media .linkedin i{
+    background-color: #1da1f2;
+}
+
+
+/* End Social */
+
+
 /* -------------------------------------------------------- */
 /* Key Frames */
 @keyframes bouncing {
@@ -405,5 +526,13 @@ border-top-color: var(--green-color);
     }
     40%, 60%{
         transform: translateX(-5px);
+    }
+}
+@keyframes change-color{
+    from{
+        background-color: var(--blue-color);
+    }
+    to{
+        background-color: #FFF;
     }
 }
