@@ -94,7 +94,7 @@ ul{
 }
 /* End Sidebar */
 /* Start Content */
-.conent{
+.content{
     overflow: hidden;
 }
 .head .search::before{
@@ -517,6 +517,49 @@ border-top-color: var(--green-color);
 
 /* End Social */
 
+/* Start Project Table */
+.projects .responsive-table{
+    overflow-x: auto;
+}
+.projects table{
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.projects thead td{
+    background-color: #eee;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.projects table td{
+    padding: 15px;
+}
+.projects tbody tr td:last-child{
+    border-right: 1px solid #eee;
+}
+.projects tbody td{
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.projects tbody tr:hover td{
+    background-color: #faf7f7;
+}
+
+.projects table img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #fff;
+}
+.projects table img:not(:first-child){
+    margin-left: -20px;
+}
+.projects table .label{
+    font-size: 13px;
+}
+
+
+/* End Project Table */
 
 /* -------------------------------------------------------- */
 /* Key Frames */
