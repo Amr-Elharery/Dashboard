@@ -561,6 +561,73 @@ border-top-color: var(--green-color);
 
 /* End Project Table */
 
+/* Start Settings Page */
+
+/* First Widget Setting Box */
+.settings-page .close-message{
+    border: 1px solid #CCC;
+    min-height: 150px;
+}
+
+@media (max-width: 767px){
+    .settings-page{
+        grid-template-columns: minmax(100px, 1fr);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+/* First Widget Setting Box */
+/* Seconed Widget Setting Box */
+.settings-page .email{
+    cursor: no-drop;
+    display: inline-block;
+    width: calc(100% - 80px);
+    color: #BBB;
+}
+/* Seconed Widget Setting Box */
+/* Third Widget Setting Box */
+.settings-page .sec-box:not(:last-child){
+    border-bottom: 1px solid #CCC;
+}
+.settings-page .sec-box .button{
+    transition: 0.3s;
+}
+.settings-page .sec-box:first-of-type .button:hover{
+    background-color: var(--blue-alt-color);
+}
+/* Fourth Widget Setting Box */
+.settings-page .social-boxes > div:focus-within i{
+    color: #000;
+}
+.settings-page .social-boxes i{
+    width: 40px;
+    height: 40px;
+    background-color: #F6F6F6;
+    border: 1px solid #DDD;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 0.3s;
+}
+
+.settings-page .social-boxes input{
+    height: 40px;
+    background-color: #F6F6F6;
+    border: 1px solid #DDD;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+}
+
+.settings-page .social-boxes input:focus{
+outline: none;
+}
+
+
+
+/* End Settings Page */
+
+
+
+
 /* -------------------------------------------------------- */
 /* Key Frames */
 @keyframes bouncing {

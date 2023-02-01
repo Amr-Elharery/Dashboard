@@ -58,6 +58,9 @@
 .pb-15{
     padding-bottom:15px;
 }
+.pb-20{
+    padding-bottom:20px;
+}
 .pl-15{
     padding-left:15px;
 }
@@ -111,6 +114,9 @@
 }
 .mb-10{
     margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
 }
 .mb-20{
     margin-bottom: 20px;
@@ -218,6 +224,9 @@ a{
 .b-none{
     border:none;
 }
+.b-ccc {
+    border: 1px solid #CCC;
+}
 /* End border */
 
 /* Start width */
@@ -260,6 +269,54 @@ a{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 /* End Components */
+
+/* Toggle Switchs */
+
+.toggle-checkbox{
+    appearance: none;
+    display: none;
+}
+.toggle-switch{
+    background-color: #CCC;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+.toggle-switch::before{
+    content: "\f00d";
+    font-family:"Font Awesome 6 free";
+    font-weight: 900;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#AAA;
+    transition: .3s;
+    
+}
+.toggle-checkbox:checked + .toggle-switch{
+    background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before{
+    content: "\f00c";
+    left: 50px;
+    color:var(--blue-color);
+}
+/* End Toggle Switchs */
+
+/* Text Area */
+.resize-none{
+    resize: none;
+}
 
 /* Start Media  */
 @media (max-width: 767px){

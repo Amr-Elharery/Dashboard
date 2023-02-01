@@ -4,7 +4,7 @@ let yearlyTargetProgSpans = document.querySelectorAll(".prog span span");
 window.onload = () => {
   // Progress Fill
   yearlyTargetSpans.forEach(e => {
-    e.style.transition = '1.5s ease-out'
+    e.style.transition = '3s ease-out'
     e.style.width = `${e.dataset.progress}%`;
   })
 
@@ -19,7 +19,7 @@ window.onload = () => {
       } else {
         clearInterval(int);
       }
-    }, 20)
+    }, 40)
   })
 
 }
