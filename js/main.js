@@ -23,3 +23,15 @@ window.onload = () => {
   })
 
 }
+
+// Backup Manager Boxes
+let divs = document.querySelectorAll(".settings-page .plans .plan");
+
+divs.forEach(e => {
+  e.addEventListener("click", (ele) => {
+    divs.forEach(e => {
+      e.classList.remove("active");
+    })
+    ele.currentTarget.classList.toggle("active");
+  })
+})

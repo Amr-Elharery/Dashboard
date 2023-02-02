@@ -621,6 +621,120 @@ border-top-color: var(--green-color);
 outline: none;
 }
 
+/* Fiveth */
+.settings-page .control input{
+    appearance: none;
+    display: none;
+}
+.settings-page .control label{
+    position: relative;
+    padding: 5px 0 0 30px;
+    cursor: pointer;
+}
+.settings-page .control label::after,
+.settings-page .control label::before{
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    transition: 0.3s;
+}
+.settings-page .control label::before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey-color);
+}
+.settings-page .control label:hover::before{
+    border: 2px solid var(--blue-alt-color);
+}
+.settings-page .control label::after{
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-color);
+    color:#FFF;
+    width: 18px;
+    height: 18px;
+    font-size:12px;
+    transform: scale(0) rotate(360deg);
+}
+.settings-page .control [type = 'checkbox']:checked + label::after{
+    transform: scale(1);
+}
+
+/* Sixth */
+.settings-page .backup input[type='radio']{
+    display: none;
+    appearance: none;
+}
+.settings-page .backup label{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.settings-page .backup label::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--grey-color);
+}
+.settings-page .backup label::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    transition: 0.3s;
+    transform: scale(0);
+
+}
+.settings-page .backup input[type='radio']:checked + label::before{
+    border-color: var(--blue-color);
+}
+.settings-page .backup input[type='radio']:checked + label::after{
+    transform: scale(1);
+}
+
+.settings-page .plans{
+    border-top: 2px solid #EEE;
+}
+
+.settings-page .plans .plan{
+    padding: 15px;
+    flex-direction: column;
+    border: 2px solid var(--grey-color);
+    border-radius: 10px;
+    flex: 1;
+    cursor: pointer;
+}
+.settings-page .plans .active{
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+@media(max-width:767px){
+.settings-page .plans{
+    flex-direction: column;
+}
+
+.settings-page .plans .plan{
+    width: 100%;
+}
+}
 
 
 /* End Settings Page */
