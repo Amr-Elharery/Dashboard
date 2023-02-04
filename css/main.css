@@ -738,7 +738,91 @@ outline: none;
 
 
 /* End Settings Page */
+/* Start Profile Page */
+.profile-info .level{
+    width: 300px;
+}
+.profile-info .level img{
+    width: 100px;
+}
+.profile-info .prog{
+    height: 6px;
+    background-color: #EEE;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 15px auto;
+    width: 70%;
+    position: relative;
+}
+@media (max-width:767px){
+    .profile-info .prog{
+        width: 50%;
+    }
+}
+.profile-info .prog span{
+    width: 0;
+    height: 100%;
+    background-color: var(--blue-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.profile-info .info{
+    flex:2;
+    border-left: 1px solid #EEE;
+}
+.profile-info .info .box{
+    transition: 0.3s;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.profile-info .info .box:not(:last-child){
+    border-bottom:1px solid #EEE ;
+}
+.profile-info .info .box:hover{
+    background-color: #EEE;
+}
+.profile-info .info .box p{
+    margin-bottom: 10px;
+    flex-basis: 50%;
+    font-size: 14px;
+}
+.profile-info .info .box p:first-child{
+    flex-basis: 100%;
+    font-size: 15px;
+}
+.profile-info .info .box p span{
+    color: #000;
+}
 
+/* Other Data Section */
+.other-data .skills{
+    flex: 0 0 33%;
+}
+.other-data .skills .skill-group:not(:last-child){
+    border-bottom: 1px solid #EEE;
+
+}
+.other-data .skills .skill-group ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+}
+
+/* Activity */
+.other-data .activities{
+    flex: 1;
+}
+.other-data .activities .activity:not(:last-of-type){
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+}
+.other-data .activities .activity img{
+    max-width: 64px;
+}
+
+/* End Profile Page */
 
 
 

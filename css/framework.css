@@ -258,6 +258,9 @@ a{
     align-items: center;
     justify-content: center;
 }
+.dir-column{
+    flex-direction: column;
+}
 .btn-shape{
     padding: 4px 10px;
     border-radius: 6px;
@@ -334,6 +337,14 @@ a{
     }
     .block-mobile{
         display: block;
+    }
+    .column-mobile{
+        flex-direction: column;
+    }
+    .center-flex-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 /* End Media */
